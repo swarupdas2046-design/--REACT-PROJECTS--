@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "image": "\thumbnails\bidarena.png",
+    "title": "BidArena - Real-Time Auction Platform",
+    "description": "A full-stack real-time auction platform where users can create auctions, join live bidding rooms, place bids instantly, chat with participants, and complete payments for winning items.",
+    "tags": [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.IO",
+      "JWT",
+      "Razorpay",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "repoLink": "https://github.com/swarupdas2046-design/Arena-Bid",
+    "demoLink": "https://bidarena-4e2j.onrender.com/"
+  },
+  {
+    "id": 2,
+    "image": "\thumbnails\byte-butique.png",
+    "title": "ByteBoutique - React E-Commerce App",
+    "description": "A modern React e-commerce application focused on API-driven product browsing, protected routes, authentication, product details, and data-based navigation using React Router loaders.",
+    "tags": [
+      "React",
+      "Vite",
+      "React Router",
+      "Axios",
+      "Tailwind CSS",
+      "React Hook Form",
+      "REST API"
+    ],
+    "repoLink": "https://github.com/swarupdas2046-design/React-Domination/tree/main/KODEX-REACT/Day13-Data-Routing",
+    "demoLink": "https://byteboutique-ecart.vercel.app/"
+  },
+  {
+    "id": 3,
+    "image": "\thumbnails\tic-tac-toe.png",
+    "title": "DebugBattle - Real-Time Tic-Tac-Toe",
+    "description": "A full-stack multiplayer Tic-Tac-Toe game built as a debugging challenge, featuring user authentication, friends, game invitations, real-time matches, multi-round scoring, and opponent reconnect handling.",
+    "tags": [
+      "React",
+      "Redux Toolkit",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.IO",
+      "JWT",
+      "Tailwind CSS",
+      "Zod"
+    ],
+    "repoLink": "https://github.com/swarupdas2046-design/TIC-TAC-TOE",
+    "demoLink": "https://tic-tac-to-3beg.onrender.com/"
+  },
+  {
+    "id": 4,
+    "image": "\thumbnails\figma-editior.png",
+    "title": "DOM Figma-Like Editor",
+    "description": "A mini Figma-inspired design editor built with Vanilla JavaScript, allowing users to create, select, drag, resize, rotate, duplicate, lock, and manage design elements with persistent editor state.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "DOM Manipulation",
+      "Mouse Events",
+      "State Management",
+      "LocalStorage"
+    ],
+    "repoLink": "https://github.com/swarupdas2046-design/FIGMA-CANVAS",
+    "demoLink": "https://figma-canvas.vercel.app/"
+  },
+  {
+    "id": 5,
+    "image": "\thumbnails\blog-platform.png",
+    "title": "Inkwell - React Blog Platform",
+    "description": "A modern React blog platform where users can create, edit, publish, save drafts, and manage articles through a protected dashboard with persistent local storage and form validation.",
+    "tags": [
+      "React",
+      "React Router",
+      "React Hook Form",
+      "Context API",
+      "Tailwind CSS",
+      "LocalStorage",
+      "CRUD",
+      "Authentication"
+    ],
+    "repoLink": "https://github.com/swarupdas2046-design/REACT-KODEX-/tree/main/blog-project",
+    "demoLink": "https://react-kodex-blog-project.vercel.app/"
+  }
+]
