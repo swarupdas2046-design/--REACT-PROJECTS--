@@ -33,9 +33,7 @@ const Nav = () => {
             <img src="\navbar-icons\wifi.svg" alt="" />
         </div>
 
-        <div className="nav-item">
-            <p>Terminal</p>
-        </div>
+        {/*  */}
         
         <div className="nav-item">
             <DateTime/>

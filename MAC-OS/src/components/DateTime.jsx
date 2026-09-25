@@ -1,25 +1,30 @@
 import { useEffect, useState } from "react";
 
 const formatDateTime = (date) => {
-  const weekdays = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+  const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const months = [
-    "jan",
-    "feb",
-    "mar",
-    "apr",
-    "may",
-    "jun",
-    "jul",
-    "aug",
-    "sep",
-    "oct",
-    "nov",
-    "dec",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
-  const hours = date.getHours() % 12 || 12;
-  const minutes = String(date.getMinutes()).padStart(2, "0");
 
-  return `${weekdays[date.getDay()]} ${months[date.getMonth()]} ${date.getDate()} ${hours}:${minutes}`;
+  const time = date.toLocaleTimeString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true,
+  });
+
+  return `${weekdays[date.getDay()]} ${time} , ${months[date.getMonth()]} ${date.getDate()}`;
 };
 
 const DateTime = () => {
