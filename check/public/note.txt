@@ -2,307 +2,611 @@
 /**
  * @file: profile.config.ts
  * @author: Swarup Das
- * @summary: A passionate full-stack developer building, learning,
- *           and turning ideas into real-world projects.
+ * @summary:
+ *   An AI-focused full-stack developer building realtime,
+ *   stateful, API-driven products — and moving toward
+ *   AI-native application engineering.
+ *
+ * @mindset:
+ *   Build the system.
+ *   Understand the system.
+ *   Improve the system.
+ *   Then make it intelligent.
  */
 
-// --------------------------------------------------
-// 1. CORE DEPENDENCIES & SKILLS
-// --------------------------------------------------
+// ==================================================
+// 01. IDENTITY
+// ==================================================
 
-const TECH_STACK = {
-  frontend: [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "React.js",
-    "React Router",
-    "TailwindCSS",
-    "Vite",
+const IDENTITY = {
+  name: "Swarup Das",
+
+  role: "AI-Focused Full-Stack Developer in Progress",
+
+  currentStatus: [
+    "BCA Student",
+    "Full-Stack Builder",
+    "AI Engineering Explorer",
   ],
+
+  coreDirection:
+    "Building complete web products first, then extending them with intelligent systems.",
+
+  interests: [
+    "AI-Powered Applications",
+    "Full-Stack Engineering",
+    "Real-Time Systems",
+    "Interactive Product Experiences",
+    "Backend Architecture",
+    "Developer Tools",
+  ],
+} as const;
+
+
+// ==================================================
+// 02. ENGINEERING STACK
+// ==================================================
+
+const ENGINEERING_STACK = {
+
+  // ----------------------------------------------
+  // Frontend Engineering
+  // ----------------------------------------------
+
+  frontend: [
+    "React.js",
+    "Next.js",
+    "Vite",
+    "React Router",
+    "Tailwind CSS",
+    "SCSS",
+    "shadcn/ui",
+    "Framer Motion",
+    "GSAP",
+    "Lenis",
+    "Three.js",
+    "React Three Fiber",
+  ],
+
+  // ----------------------------------------------
+  // Backend Engineering
+  // ----------------------------------------------
 
   backend: [
     "Node.js",
     "Express.js",
+    "REST APIs",
+    "Socket.IO",
+    "JWT Authentication",
+    "Zod Validation",
+    "bcrypt",
+    "Middleware Architecture",
+    "Service-Oriented Backend Structure",
+  ],
+
+  // ----------------------------------------------
+  // Data Layer
+  // ----------------------------------------------
+
+  data: [
     "MongoDB",
     "Mongoose",
-    "REST APIs",
-    "JWT Authentication",
-    "Socket.IO",
+    "Redis",
+    "LocalStorage",
   ],
 
-  tools: [
+  // ----------------------------------------------
+  // Security & Reliability
+  // ----------------------------------------------
+
+  security: [
+    "JWT",
+    "Password Hashing",
+    "Protected Routes",
+    "Input Validation",
+    "Helmet",
+    "CORS",
+    "Rate Limiting",
+    "Centralized Error Handling",
+  ],
+
+  // ----------------------------------------------
+  // Payments & Integrations
+  // ----------------------------------------------
+
+  integrations: [
+    "Razorpay",
+    "Axios",
+    "REST APIs",
+    "Image Upload Workflows",
+  ],
+
+  // ----------------------------------------------
+  // Dev & Deployment
+  // ----------------------------------------------
+
+  tooling: [
     "Git",
     "GitHub",
+    "Docker",
     "Postman",
     "Vercel",
-    "Figma",
+    "Render",
+    "Linux",
   ],
 
-  currentlyLearning: [
-    "Advanced JavaScript",
-    "React.js",
-    "Node.js",
-    "Full-Stack Development",
+} as const;
+
+
+// ==================================================
+// 03. AI DIRECTION
+// ==================================================
+
+const AI_ENGINEERING = {
+
+  identity:
+    "AI-Native Application Engineering",
+
+  currentTools: [
+    "Google Gemini",
+    "AI-Assisted Development",
   ],
-};
+
+  learningTargets: [
+    "LLM API Integration",
+    "Prompt Engineering",
+    "Structured AI Responses",
+    "Streaming AI Interfaces",
+    "AI-Powered CRUD Workflows",
+    "RAG Applications",
+    "Embeddings & Vector Search",
+    "Tool Calling",
+    "Agentic Workflows",
+    "AI + Real-Time Systems",
+  ],
+
+  productVision: [
+    "Build normal web applications.",
+    "Identify where intelligence creates real value.",
+    "Integrate AI into the product architecture.",
+    "Turn AI features into reliable user workflows.",
+  ],
+
+} as const;
 
 
-// --------------------------------------------------
-// 2. DEVELOPER JOURNEY
-// --------------------------------------------------
+// ==================================================
+// 04. ENGINEERING CAPABILITIES
+// ==================================================
 
-class DeveloperJourney {
+const ENGINEERING_CAPABILITIES = {
 
-  /**
-   * CURRENT STATUS
-   * @period 2025 - Present
-   */
-  public async FullStackDeveloper(): Promise<DeveloperProfile> {
+  realtimeSystems: [
+    "Socket.IO Rooms",
+    "Live State Synchronization",
+    "Realtime Presence",
+    "Realtime Chat",
+    "Disconnect / Reconnect Handling",
+    "Game Event Systems",
+  ],
 
-    const role = "Full-Stack Developer in Progress";
+  applicationArchitecture: [
+    "Frontend / Backend Separation",
+    "Controller / Route Organization",
+    "Service-Based Backend Logic",
+    "Feature-Oriented React Structure",
+    "Protected Routing",
+    "Reusable Components",
+  ],
 
-    const frontend = [
-      "Building responsive interfaces with React",
-      "Creating reusable components",
-      "Working with React Router",
-      "Managing state with hooks & context",
-    ];
+  stateManagement: [
+    "React State",
+    "Context API",
+    "Redux Toolkit",
+    "Server State Synchronization",
+    "Persistent Client State",
+  ],
 
-    const backend = [
-      "Designing REST APIs",
-      "Building Express.js servers",
-      "Working with MongoDB & Mongoose",
-      "Implementing authentication with JWT",
-    ];
+  editorSystems: [
+    "DOM-Based State Modeling",
+    "Canvas Interaction",
+    "Layer Management",
+    "Undo / Redo History",
+    "Drag / Resize / Rotate",
+    "Persistent Editor State",
+  ],
 
-    const mindset = [
-      "Learn",
-      "Build",
-      "Debug",
-      "Improve",
-      "Repeat",
-    ];
+  apiEngineering: [
+    "RESTful Endpoints",
+    "Authentication APIs",
+    "CRUD Workflows",
+    "Validation",
+    "Error Handling",
+    "Frontend / Backend Integration",
+  ],
 
-    return {
-      role,
-      frontend,
-      backend,
-      mindset,
-    };
-  }
+} as const;
+
+
+// ==================================================
+// 05. FEATURED SYSTEMS BUILT
+// ==================================================
+
+interface Project {
+  name: string;
+  category: string;
+  architecture: string[];
+  engineeringFocus: string[];
 }
 
+const PROJECT_ARCHIVE: Project[] = [
 
-// --------------------------------------------------
-// 3. PROJECT ARCHIVE
-// --------------------------------------------------
+  // ------------------------------------------------
+  // 01 — BidArena
+  // ------------------------------------------------
 
-const projects = [
   {
-    name: "CricBuzz",
-    type: "Full-Stack Application",
-    focus: [
-      "Match Management",
-      "Live Score",
-      "Commentary",
-      "Toss & Playing XI",
-      "Socket.IO Real-Time Features",
+    name: "BidArena",
+
+    category: "Real-Time Auction Platform",
+
+    architecture: [
+      "React + Vite Frontend",
+      "Node + Express Backend",
+      "MongoDB Data Layer",
+      "Socket.IO Realtime Layer",
+      "JWT Authentication",
+      "Razorpay Payment Integration",
+    ],
+
+    engineeringFocus: [
+      "Live Auction Rooms",
+      "Realtime Bidding",
+      "Server-Side Bid Validation",
+      "Race-Condition Protection",
+      "Anti-Sniping Timer Extension",
+      "Scheduled Auctions",
+      "Automatic Auction Closure",
+      "Realtime Chat",
+      "Bid & Auction Statistics",
+      "Winner Payment Flow",
     ],
   },
 
+
+  // ------------------------------------------------
+  // 02 — DebugBattle
+  // ------------------------------------------------
+
   {
-    name: "Linktree Clone",
-    type: "Full-Stack Application",
-    stack: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
+    name: "DebugBattle",
+
+    category: "Realtime Multiplayer System",
+
+    architecture: [
+      "React 19",
+      "Redux Toolkit",
+      "Node.js + Express",
+      "MongoDB + Mongoose",
+      "Socket.IO",
       "JWT",
-      "Recharts",
+      "Zod",
     ],
-    focus: [
-      "Link Management",
+
+    engineeringFocus: [
       "Authentication",
-      "Click Tracking",
-      "Analytics Dashboard",
+      "Protected Routes",
+      "Friend Request System",
+      "Realtime Online Presence",
+      "Game Invitations",
+      "Socket.IO Match Rooms",
+      "Multi-Round Match State",
+      "Opponent Disconnect Recovery",
+      "Reconnect Handling",
+      "Backend Validation",
+      "Rate Limiting",
+      "Security Middleware",
     ],
   },
+
+
+  // ------------------------------------------------
+  // 03 — DOM Figma-Like Editor
+  // ------------------------------------------------
 
   {
     name: "DOM Figma-Like Editor",
-    type: "Vanilla JavaScript",
-    focus: [
+
+    category: "Interactive Editor System",
+
+    architecture: [
+      "HTML",
+      "CSS",
+      "Vanilla JavaScript",
+      "DOM State Modeling",
+      "LocalStorage Persistence",
+    ],
+
+    engineeringFocus: [
+      "Element Creation",
+      "Single Selection Model",
+      "Drag & Drop",
+      "Bounded Canvas Interaction",
+      "Resize Handles",
+      "Rotation Controls",
+      "Layers Management",
+      "Properties Panel",
+      "Element Locking",
+      "Keyboard Controls",
+      "Undo / Redo History",
+      "JSON-Based State Snapshots",
+      "HTML / JSON Export",
+    ],
+  },
+
+
+  // ------------------------------------------------
+  // 04 — ByteBoutique
+  // ------------------------------------------------
+
+  {
+    name: "ByteBoutique",
+
+    category: "React E-Commerce Application",
+
+    architecture: [
+      "React",
+      "Vite",
+      "React Router",
+      "Axios",
+      "REST APIs",
+      "Tailwind CSS",
+    ],
+
+    engineeringFocus: [
+      "API-Driven Product Data",
+      "Authentication",
+      "Protected Routes",
+      "Product Detail Workflows",
+      "Data-Based Navigation",
+      "Router Loaders",
+      "Form Handling",
+    ],
+  },
+
+
+  // ------------------------------------------------
+  // 05 — Inkwell
+  // ------------------------------------------------
+
+  {
+    name: "Inkwell",
+
+    category: "React Blog Platform",
+
+    architecture: [
+      "React",
+      "React Router",
+      "React Hook Form",
+      "Context API",
+      "Tailwind CSS",
+      "LocalStorage",
+    ],
+
+    engineeringFocus: [
+      "CRUD Workflows",
+      "Article Management",
+      "Draft Handling",
+      "Protected Dashboard",
+      "Form Validation",
+      "Persistent Client State",
+      "Authentication Flow",
+    ],
+  },
+
+
+  // ------------------------------------------------
+  // 06 — JavaScript Project Lab
+  // ------------------------------------------------
+
+  {
+    name: "JavaScript Project Lab",
+
+    category: "Frontend Logic & Interaction Collection",
+
+    architecture: [
+      "Vanilla JavaScript",
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "GSAP",
+      "LocalStorage",
+    ],
+
+    engineeringFocus: [
       "DOM Manipulation",
+      "Event-Driven Interfaces",
+      "Game Logic",
+      "Drag & Drop",
+      "Persistent State",
       "Interactive UI",
-      "Drag & Design Concepts",
+      "Animations",
+      "Responsive Design",
     ],
   },
 
-  {
-    name: "Music Player",
-    type: "JavaScript / Frontend",
-    deployment: "Vercel",
-  },
-
-  {
-    name: "Weather App",
-    type: "API-Based Application",
-    focus: [
-      "Fetch API",
-      "Async/Await",
-      "Dynamic UI",
-    ],
-  },
-
-  {
-    name: "React Contact Manager",
-    type: "React Application",
-    focus: [
-      "CRUD Operations",
-      "Local Storage",
-      "Reusable Components",
-    ],
-  },
 ];
 
 
-// --------------------------------------------------
-// 4. DEVELOPMENT EXPERIENCE
-// --------------------------------------------------
+// ==================================================
+// 06. WHAT I ACTUALLY LIKE BUILDING
+// ==================================================
 
-const experience = {
-  learningEnvironment: [
-    "Sheriyans Coding School",
-    "KODEX",
+const BUILDING_STYLE = {
+
+  notJustUI: true,
+
+  preference: [
+    "Interactive systems over static pages",
+    "Features over screenshots",
+    "Stateful applications over simple landing pages",
+    "Realtime behavior over isolated CRUD",
+    "Architecture over copy-paste implementations",
   ],
 
-  practicalLearning: [
-    "Building projects from scratch",
-    "Debugging real-world issues",
-    "Working with APIs",
-    "Git & GitHub workflow",
-    "Frontend to Backend integration",
+  favoriteProblems: [
+    "How should realtime state stay synchronized?",
+    "How should the backend validate critical actions?",
+    "What happens when a user disconnects?",
+    "How should state survive refreshes?",
+    "How should complex UI state be modeled?",
+    "Where can AI genuinely improve the product?",
   ],
 
-  collaboration: [
-    "Hackathons",
-    "Team Projects",
-    "Code Reviews",
-    "Debug Battles",
-  ],
-};
+} as const;
 
 
-// --------------------------------------------------
-// 5. EDUCATION
-// --------------------------------------------------
+// ==================================================
+// 07. ENGINEERING PRINCIPLES
+// ==================================================
 
-const education = new Map<string, string>([
-  [
-    "Amity University Online",
-    "Bachelor of Computer Applications (BCA)"
-  ],
-  [
-    "Current Focus",
-    "Full-Stack Web Development"
-  ],
-]);
+const ENGINEERING_PRINCIPLES = [
 
+  "Understand the problem before writing the code.",
 
-// --------------------------------------------------
-// 6. CURRENT BUILD MODE
-// --------------------------------------------------
+  "Keep business logic on the correct layer.",
 
-const currentMission = {
-  goal: "Become a strong Full-Stack Developer",
+  "Treat realtime state as a system, not just a UI effect.",
 
-  focus: [
-    "Deepen JavaScript fundamentals",
-    "Build production-ready React applications",
-    "Master Node.js & Express",
-    "Improve backend architecture",
-    "Write cleaner and scalable code",
-  ],
+  "Validate important operations on the server.",
 
-  philosophy: `
-    Don't just watch tutorials.
-    Build something.
-    Break something.
-    Debug it.
-    Understand it.
-    Build again.
-  `,
-};
+  "Build features that survive refreshes, bad input, and disconnects.",
+
+  "Prefer reusable architecture over repeated code.",
+
+  "Use AI as an engineering multiplier, not as a substitute for understanding.",
+
+  "Ship → Debug → Refactor → Improve.",
+
+] as const;
 
 
-// --------------------------------------------------
-// 7. DEVELOPER PROFILE
-// --------------------------------------------------
+// ==================================================
+// 08. CURRENT GROWTH PHASE
+// ==================================================
 
-interface DeveloperProfile {
-  name: string;
-  role: string;
-  passion: string[];
-  interests: string[];
+class DeveloperEvolution {
+
+  stage = "Full-Stack Foundation → AI Engineering";
+
+  currentMission = [
+    "Deepen JavaScript & TypeScript",
+    "Strengthen React Architecture",
+    "Build Better Node.js Backends",
+    "Understand Scalable System Design",
+    "Learn AI Application Patterns",
+    "Combine AI with Real-World Products",
+  ];
+
+  nextSystems = [
+    "AI-Powered SaaS",
+    "RAG-Based Applications",
+    "AI Productivity Tools",
+    "Agentic Workflows",
+    "Realtime + AI Applications",
+  ];
+
+  longTermGoal =
+    "Become an engineer who can design, build, ship, and evolve intelligent full-stack products.";
 }
 
-const developer: DeveloperProfile = {
+
+// ==================================================
+// 09. DEVELOPER PROFILE
+// ==================================================
+
+const developer = {
+
   name: "Swarup Das",
 
-  role: "Full-Stack Developer in Progress",
+  title:
+    "AI-Focused Full-Stack Developer",
 
-  passion: [
-    "Web Development",
-    "Problem Solving",
-    "Building Projects",
-    "Learning New Technologies",
+  specialization: [
+    "React",
+    "Node.js",
+    "MongoDB",
+    "Realtime Applications",
+    "AI-Powered Web Products",
   ],
 
-  interests: [
-    "Frontend Engineering",
-    "Backend Development",
-    "Creative UI",
-    "Real-Time Applications",
+  strongestBuildPatterns: [
+    "Realtime Systems",
+    "Authentication",
+    "State Management",
+    "API-Driven Applications",
+    "Interactive Editors",
+    "Complex Frontend Workflows",
   ],
-};
+
+  developerType:
+    "Builder",
+
+  status:
+    "Learning. Shipping. Breaking. Fixing. Rebuilding.",
+
+} as const;
 
 
-// --------------------------------------------------
-// 8. FUTURE ROADMAP
-// --------------------------------------------------
-
-const roadmap = [
-  "Master JavaScript",
-  "Master React",
-  "Build Scalable Backends",
-  "Learn Advanced System Design",
-  "Build Production-Level Projects",
-  "Contribute to Open Source",
-  "Become a Professional Full-Stack Developer",
-];
+// ==================================================
+// 10. TERMINAL STATUS
+// ==================================================
 
 export default developer;
 
 
 ```bash
-# TERMINAL OUTPUT
-# ---------------------------------------
+# ==================================================
+# SWARUP.DEV — TERMINAL
+# ==================================================
 
-$ developer --status
+$ swarup --status
 
-> Name: Swarup Das
-> Role: Full-Stack Developer in Progress
-> Education: BCA @ Amity University Online
-> Focus: React + Node.js + MongoDB
-> Projects: Loading...
-> Curiosity: [||||||||||] 100%
-> Learning: [||||||||||] 100%
-> Building: [||||||||||] 100%
+> Identity:
+> AI-Focused Full-Stack Developer
 
-> Status: Always Learning.
-> Status: Always Building.
+> Core:
+> React + Node.js + MongoDB + Real-Time Systems
 
-> Ready to ship. 🚀
+> Current Mission:
+> Full-Stack Engineering → AI Engineering
+
+> Systems Built:
+> [████████████████████] Realtime
+> [███████████████████░] Backend
+> [██████████████████░░] Frontend
+> [███████████████░░░░░] Architecture
+> [██████████░░░░░░░░░░] AI Engineering
+
+> Projects:
+> BidArena
+> DebugBattle
+> DOM Figma-Like Editor
+> ByteBoutique
+> Inkwell
+> JavaScript Project Lab
+> ...and more.
+
+> Mindset:
+> Build > Break > Debug > Understand > Rebuild
+
+> AI Mode:
+> [INITIALIZING...]
+
+> Future:
+> Intelligent Full-Stack Systems
+
+$ swarup --ready
+
+> Ready to build. 🚀
 ```

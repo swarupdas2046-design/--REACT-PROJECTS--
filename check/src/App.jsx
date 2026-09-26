@@ -1,6 +1,7 @@
 import "./app.scss";
 import Dock from "./components/Dock";
 import Nav from "./components/Nav";
+import Cli from "./windows/Cli-Window/Cli";
 import Github from "./windows/Github";
 // import MacWindow from "./windows/MacWindow";
 import Note from "./windows/Note-Window/Note";
@@ -15,6 +16,7 @@ const App = () => {
       <Note />
       <Resume />
       <Spotify />
+      <Cli />
     </main>
   );
 };
