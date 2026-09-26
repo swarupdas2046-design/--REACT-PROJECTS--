@@ -3,8 +3,8 @@ import "./macWindow.scss"
 const MacWindow = ({children}) => {
   return (
     <Rnd default={{
-      width:"40vw",
-      height:"40vh",
+      width:"35vw",
+      height:"45vh",
       x:300,
       y:200
     }}>
