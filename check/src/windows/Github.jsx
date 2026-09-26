@@ -3,9 +3,9 @@ import "./github.scss";
 import Data from "../assets/github.json";
 import Card from "./Card";
 
-const Github = () => {
+const Github = ({ setWindowState, windowName }) => {
   return (
-    <MacWindow>
+    <MacWindow setWindowState={setWindowState} windowName={windowName}>
       <div className="github-content">
 
         {/* Header */}

@@ -1,17 +1,29 @@
 import { Rnd } from "react-rnd";
-import "./macWindow.scss"
-const MacWindow = ({children}) => {
+import "./macWindow.scss";
+const MacWindow = ({ children, setWindowState, windowName }) => {
   return (
-    <Rnd default={{
-      width:"35vw",
-      height:"45vh",
-      x:300,
-      y:200
-    }}>
+    <Rnd
+      default={{
+        width: "35vw",
+        height: "45vh",
+        x: 300,
+        y: 200,
+      }}
+    >
       <div className="window">
         <div className="nav-section">
           <div className="dots">
-            <div className="dot red"></div>
+            <div
+              onClick={() => {
+                setWindowState((prev) => {
+                  return {
+                    ...prev,
+                    [windowName]: false,
+                  };
+                });
+              }}
+              className="dot red"
+            ></div>
             <div className="dot yellow"></div>
             <div className="dot green"></div>
           </div>
@@ -19,9 +31,7 @@ const MacWindow = ({children}) => {
             <p>Swarup Das - zsh</p>
           </div>
         </div>
-        <div className="main-content">
-          {children}
-        </div>
+        <div className="main-content">{children}</div>
       </div>
     </Rnd>
   );

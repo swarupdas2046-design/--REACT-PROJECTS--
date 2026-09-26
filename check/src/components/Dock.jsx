@@ -1,18 +1,51 @@
-import "./dock.scss"
-const Dock = () => {
+import "./dock.scss";
+const Dock = ({ setWindowState }) => {
   return (
-    <footer className='dock'>
-      
-    <div className="icon github"><img src="\doc-icons\github.svg" alt="github" /></div>
-    <div className="icon calender"><img src="\doc-icons\calender.svg" alt="calender" /></div>
-    <div className="icon note"><img src="\doc-icons\note.svg" alt="note" /></div>
-    <div className="icon mail"><img src="\doc-icons\mail.svg" alt="mail" /></div>
-    <div className="icon pdf"><img src="\doc-icons\pdf.svg" alt="pdf" /></div>
-    <div className="icon spotify"><img src="\doc-icons\spotify.svg" alt="spotify" /></div>
-    <div className="icon link"><img src="\doc-icons\link.svg" alt="link" /></div>
-    <div className="icon cli"><img src="\doc-icons\cli.svg" alt="cli" /></div>
+    <footer className="dock">
+      <div
+        onClick={() => setWindowState((prev) => ({ ...prev, github: true }))}
+        className="icon github"
+      >
+        <img src="\doc-icons\github.svg" alt="github" />
+      </div>
+      <div onClick={()=>{window.open("https://calendar.google.com/calendar/","_blank")}}
+      className="icon calender">
+        <img src="\doc-icons\calender.svg" alt="calender" />
+      </div>
+      <div
+        onClick={() => setWindowState((prev) => ({ ...prev, note: true }))}
+        className="icon note"
+      >
+        <img src="\doc-icons\note.svg" alt="note" />
+      </div>
+      <div onClick={()=>{window.open("mailto:-swarupdas2046@gmail.com","_blank")}}
+      className="icon mail">
+        <img src="\doc-icons\mail.svg" alt="mail" />
+      </div>
+      <div
+        onClick={() => setWindowState((prev) => ({ ...prev, resume: true }))}
+        className="icon pdf"
+      >
+        <img src="\doc-icons\pdf.svg" alt="pdf" />
+      </div>
+      <div
+        onClick={() => setWindowState((prev) => ({ ...prev, spotify: true }))}
+        className="icon spotify"
+      >
+        <img src="\doc-icons\spotify.svg" alt="spotify" />
+      </div>
+      <div onClick={()=>{window.open("https://www.linkedin.com/in/swarup-das-/","_blank")}}
+      className="icon link">
+        <img src="\doc-icons\link.svg" alt="link" />
+      </div>
+      <div
+        onClick={() => setWindowState((prev) => ({ ...prev, cli: true }))}
+        className="icon cli"
+      >
+        <img src="\doc-icons\cli.svg" alt="cli" />
+      </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Dock
+export default Dock;

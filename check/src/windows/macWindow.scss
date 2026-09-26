@@ -23,21 +23,28 @@
             gap: 0.25rem;
 
             .dot{
-                height: 0.75rem;
-                width: 0.75rem;
+                height: 0.85rem;
+                width: 0.85rem;
                 border-radius: 50%;
             }
 
             .red{
                 background-color: red;
+                cursor: pointer;
+            }
+            .red:hover{
+                scale: 1.1;
+                background-color: rgb(255, 0, 0, 0.8);
             }
 
             .yellow{
                 background-color: yellow;
+                cursor: pointer;
             }
 
             .green{
                 background-color: green;
+                cursor: pointer;
             }
         }
     }
