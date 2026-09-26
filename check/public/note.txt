@@ -1,0 +1,308 @@
+
+/**
+ * @file: profile.config.ts
+ * @author: Swarup Das
+ * @summary: A passionate full-stack developer building, learning,
+ *           and turning ideas into real-world projects.
+ */
+
+// --------------------------------------------------
+// 1. CORE DEPENDENCIES & SKILLS
+// --------------------------------------------------
+
+const TECH_STACK = {
+  frontend: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React.js",
+    "React Router",
+    "TailwindCSS",
+    "Vite",
+  ],
+
+  backend: [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "REST APIs",
+    "JWT Authentication",
+    "Socket.IO",
+  ],
+
+  tools: [
+    "Git",
+    "GitHub",
+    "Postman",
+    "Vercel",
+    "Figma",
+  ],
+
+  currentlyLearning: [
+    "Advanced JavaScript",
+    "React.js",
+    "Node.js",
+    "Full-Stack Development",
+  ],
+};
+
+
+// --------------------------------------------------
+// 2. DEVELOPER JOURNEY
+// --------------------------------------------------
+
+class DeveloperJourney {
+
+  /**
+   * CURRENT STATUS
+   * @period 2025 - Present
+   */
+  public async FullStackDeveloper(): Promise<DeveloperProfile> {
+
+    const role = "Full-Stack Developer in Progress";
+
+    const frontend = [
+      "Building responsive interfaces with React",
+      "Creating reusable components",
+      "Working with React Router",
+      "Managing state with hooks & context",
+    ];
+
+    const backend = [
+      "Designing REST APIs",
+      "Building Express.js servers",
+      "Working with MongoDB & Mongoose",
+      "Implementing authentication with JWT",
+    ];
+
+    const mindset = [
+      "Learn",
+      "Build",
+      "Debug",
+      "Improve",
+      "Repeat",
+    ];
+
+    return {
+      role,
+      frontend,
+      backend,
+      mindset,
+    };
+  }
+}
+
+
+// --------------------------------------------------
+// 3. PROJECT ARCHIVE
+// --------------------------------------------------
+
+const projects = [
+  {
+    name: "CricBuzz",
+    type: "Full-Stack Application",
+    focus: [
+      "Match Management",
+      "Live Score",
+      "Commentary",
+      "Toss & Playing XI",
+      "Socket.IO Real-Time Features",
+    ],
+  },
+
+  {
+    name: "Linktree Clone",
+    type: "Full-Stack Application",
+    stack: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Recharts",
+    ],
+    focus: [
+      "Link Management",
+      "Authentication",
+      "Click Tracking",
+      "Analytics Dashboard",
+    ],
+  },
+
+  {
+    name: "DOM Figma-Like Editor",
+    type: "Vanilla JavaScript",
+    focus: [
+      "DOM Manipulation",
+      "Interactive UI",
+      "Drag & Design Concepts",
+    ],
+  },
+
+  {
+    name: "Music Player",
+    type: "JavaScript / Frontend",
+    deployment: "Vercel",
+  },
+
+  {
+    name: "Weather App",
+    type: "API-Based Application",
+    focus: [
+      "Fetch API",
+      "Async/Await",
+      "Dynamic UI",
+    ],
+  },
+
+  {
+    name: "React Contact Manager",
+    type: "React Application",
+    focus: [
+      "CRUD Operations",
+      "Local Storage",
+      "Reusable Components",
+    ],
+  },
+];
+
+
+// --------------------------------------------------
+// 4. DEVELOPMENT EXPERIENCE
+// --------------------------------------------------
+
+const experience = {
+  learningEnvironment: [
+    "Sheriyans Coding School",
+    "KODEX",
+  ],
+
+  practicalLearning: [
+    "Building projects from scratch",
+    "Debugging real-world issues",
+    "Working with APIs",
+    "Git & GitHub workflow",
+    "Frontend to Backend integration",
+  ],
+
+  collaboration: [
+    "Hackathons",
+    "Team Projects",
+    "Code Reviews",
+    "Debug Battles",
+  ],
+};
+
+
+// --------------------------------------------------
+// 5. EDUCATION
+// --------------------------------------------------
+
+const education = new Map<string, string>([
+  [
+    "Amity University Online",
+    "Bachelor of Computer Applications (BCA)"
+  ],
+  [
+    "Current Focus",
+    "Full-Stack Web Development"
+  ],
+]);
+
+
+// --------------------------------------------------
+// 6. CURRENT BUILD MODE
+// --------------------------------------------------
+
+const currentMission = {
+  goal: "Become a strong Full-Stack Developer",
+
+  focus: [
+    "Deepen JavaScript fundamentals",
+    "Build production-ready React applications",
+    "Master Node.js & Express",
+    "Improve backend architecture",
+    "Write cleaner and scalable code",
+  ],
+
+  philosophy: `
+    Don't just watch tutorials.
+    Build something.
+    Break something.
+    Debug it.
+    Understand it.
+    Build again.
+  `,
+};
+
+
+// --------------------------------------------------
+// 7. DEVELOPER PROFILE
+// --------------------------------------------------
+
+interface DeveloperProfile {
+  name: string;
+  role: string;
+  passion: string[];
+  interests: string[];
+}
+
+const developer: DeveloperProfile = {
+  name: "Swarup Das",
+
+  role: "Full-Stack Developer in Progress",
+
+  passion: [
+    "Web Development",
+    "Problem Solving",
+    "Building Projects",
+    "Learning New Technologies",
+  ],
+
+  interests: [
+    "Frontend Engineering",
+    "Backend Development",
+    "Creative UI",
+    "Real-Time Applications",
+  ],
+};
+
+
+// --------------------------------------------------
+// 8. FUTURE ROADMAP
+// --------------------------------------------------
+
+const roadmap = [
+  "Master JavaScript",
+  "Master React",
+  "Build Scalable Backends",
+  "Learn Advanced System Design",
+  "Build Production-Level Projects",
+  "Contribute to Open Source",
+  "Become a Professional Full-Stack Developer",
+];
+
+export default developer;
+
+
+```bash
+# TERMINAL OUTPUT
+# ---------------------------------------
+
+$ developer --status
+
+> Name: Swarup Das
+> Role: Full-Stack Developer in Progress
+> Education: BCA @ Amity University Online
+> Focus: React + Node.js + MongoDB
+> Projects: Loading...
+> Curiosity: [||||||||||] 100%
+> Learning: [||||||||||] 100%
+> Building: [||||||||||] 100%
+
+> Status: Always Learning.
+> Status: Always Building.
+
+> Ready to ship. 🚀
+```
