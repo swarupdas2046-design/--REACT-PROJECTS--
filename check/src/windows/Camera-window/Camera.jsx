@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./Camera.scss";
 import MacWindow from "../MacWindow";
 
-const Camera = ({ setWindowState, windowName }) => {
+const Camera = ({ setWindowState, windowName, activeWindow, setActiveWindow }) => {
   const videoRef = useRef(null);
   const streamRef = useRef(null);
 
@@ -101,6 +101,8 @@ const Camera = ({ setWindowState, windowName }) => {
     <MacWindow
       setWindowState={setWindowState}
       windowName={windowName}
+      activeWindow={activeWindow}
+      setActiveWindow={setActiveWindow}
     >
       <div className="camera-body">
 

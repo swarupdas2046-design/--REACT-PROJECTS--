@@ -2,7 +2,7 @@ import MacWindow from "../MacWindow";
 import Terminal from "react-console-emulator";
 import "./Cli.scss";
 
-const Cli = ({ setWindowState, windowName}) => {
+const Cli = ({ setWindowState, windowName, activeWindow, setActiveWindow }) => {
   const commands = {
 //     help: {
 //       description: "Show available commands",
@@ -193,7 +193,7 @@ resume/
   };
 
   return (
-    <MacWindow setWindowState={setWindowState} windowName={windowName}>
+    <MacWindow setWindowState={setWindowState} windowName={windowName} activeWindow={activeWindow} setActiveWindow={setActiveWindow}>
       <div className="cli-window">
         <Terminal
           commands={commands}

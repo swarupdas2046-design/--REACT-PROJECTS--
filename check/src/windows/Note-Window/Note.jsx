@@ -4,7 +4,7 @@ import Markdown from 'react-markdown'
 import './Note.scss'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-const Note = ({setWindowState, windowName}) => {
+const Note = ({setWindowState, windowName, activeWindow, setActiveWindow}) => {
 
     const [markDown, setMarkDown] = useState(null)
 
@@ -15,7 +15,7 @@ useEffect(()=>{
 
   return (
 
-    <MacWindow setWindowState={setWindowState} windowName={windowName}>
+    <MacWindow setWindowState={setWindowState} windowName={windowName} activeWindow={activeWindow} setActiveWindow={setActiveWindow}>
     <div className="note-content">
         {markDown && <SyntaxHighlighter language="typescript" style={atelierCaveDark}>{markDown}</SyntaxHighlighter>}
     </div>
