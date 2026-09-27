@@ -54,6 +54,10 @@
     .link {
         background: linear-gradient(to bottom, rgb(163, 97, 170), rgb(142, 33, 154));
     }
+    .camera{
+        background: linear-gradient(180deg,#3ee7e1 0%,#16b8c1 40%,#07869d 72%,#07556d 100%);    
+    }
+
 
     .icon:hover {
         transform: scale(1.25) translateY(-20%);

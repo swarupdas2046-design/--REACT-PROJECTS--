@@ -26,11 +26,23 @@ const Nav = () => {
         </div>
 
         <div className="nav-item">
+            <p>Go</p>
+        </div>
+
+        <div className="nav-item">
             <p>Code</p>
         </div>
 
         <div className="nav-item">
+            <p>Run</p>
+        </div>
+
+        <div className="nav-item">
             <p>Terminal</p>
+        </div>
+
+        <div className="nav-item">
+            <p>Help</p>
         </div>
 
 

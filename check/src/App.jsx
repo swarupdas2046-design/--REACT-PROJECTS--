@@ -7,6 +7,7 @@ import Github from "./windows/Github";
 import Note from "./windows/Note-Window/Note";
 import Resume from "./windows/Resume-Window/Resume";
 import Spotify from "./windows/Spotify-window/Spotify";
+import Camera from "./windows/Camera-window/Camera";
 const App = () => {
   const [windowState, setWindowState] = useState({
     github: false,
@@ -14,6 +15,7 @@ const App = () => {
     resume: false,
     spotify: false,
     cli: false,
+    camera: false,
   });
 
   return (
@@ -35,6 +37,10 @@ const App = () => {
       {windowState.cli && (
         <Cli setWindowState={setWindowState} windowName="cli" />
       )}
+      {windowState.camera && (
+        <Camera setWindowState={setWindowState} windowName="camera" />
+      )}
+      
     </main>
   );
 };
